@@ -46,7 +46,7 @@ public class Counter{
 **Reentrancy**
 재진입 : Lock을 획득한 Thread가 같은 Lock을 얻기 위해 대기할 필요가 없는 것   
 (Lock의 획득이 '호출 단위'가 아닌 **Thread 단위**로 일어나는 것)
-``java
+```java
 public class Reentrancy {
     // b가 Synchronized로 선언되어 있더라도, a 진입시 lock을 획득하였음.
     // b를 호출할 수 있게 됨.
@@ -73,7 +73,7 @@ A획득 -> B획득 -> B해제 -> A해제는 가능하지만,
 
 A획득 -> B획득 -> A해제 -> B해제는 불가능함.
 
-이것을 가능하게 하기 위해서는 **Reentrant Lock (명시적 Lock) 을 사용해야 함.
+이것을 가능하게 하기 위해서는 Reentrant Lock (명시적 Lock)을 사용해야 함.
 
 
 **Visibility**
