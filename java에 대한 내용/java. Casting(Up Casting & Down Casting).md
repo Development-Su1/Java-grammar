@@ -32,7 +32,7 @@ Child c = (Child) p;
 
 
 **예시 문제**
-```
+```java
 class Parent {
 	int age;
 
