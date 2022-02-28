@@ -29,7 +29,7 @@ StringBuffer는 각 메서드별로 Synchronized Keyword가 존재하여, Multi-
 그렇기 때문에 Multi-Thread 환경이라면 값 동기화 보장을 위해 StringBuffer를 사용하고, Single-Thread 환경이라면 StringBuilder를 사용하는 것이 좋습니다.
 
 
-**결론적으로**
+**결론적으로**   
 String Class는 JDK 1.5버전 이전에 문자열연산('+', concat)을 할 때에는 조합된 문자열을 새로운 메모리에 할당하여 참조함으로 인해서 성능상의 이슈가 있었습니다. 그러나 JDK1.5 버전 이후에는 컴파일 단계에서 String 객체를 사용하더라도 StringBuilder로 컴파일 되도록 변경되었습니다. 그리하여 JDK 1.5 이후 버전에서는 String 클래스를 활용해도 StringBuilder와 성능상으로 차이가 없어졌습니다. 하지만 반복 루프를 사용해서 문자열을 더할 때에는 객체를 계속 추가한다는 사실에는 변함이 없습니다.
 
 String Class를 쓰는 대신, Thread와 관련이 있으면 StringBuffer를, Thread 안전 여부와 상관이 없으면 StringBuilder를 사용하는 것을 권장합니다.
