@@ -7,6 +7,7 @@
 
 직렬화된 데이터들은 모두 Primitive Type(기본형)이 되고, 이는 파일 저장이나 네트워크 전송 시 파싱이 가능한 유의미한 데이터가 된다. 따라서, 전송 및 저장이 가능한 데이터로 만들어주는 것이 바로 '직렬화(Serialization)'라고 말할 수 있다.
 
+
 # 직렬화 조건
 자바에서는 간단히 java.io.Serializable 인터페이스 구현으로 직렬화/역직렬화가 가능하다.
 
@@ -16,11 +17,13 @@
 
 Primitive 타입이 아닌 Reference 타입처럼 주소값을 지닌 객체들은 바이트로 변환하기 위해 Serializable 인터페이스를 구현해야 한다.
 
+
 # 직렬화 상황
 JVM에 상주하는 객체 데이터를 영속화할 때 사용   
 Servlet Session   
 Cache   
 Java RMI(Remote Method Invocation)
+
 
 # 직렬화 구현
 ```java
