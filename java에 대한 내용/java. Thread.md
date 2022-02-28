@@ -1,4 +1,4 @@
-# Java에서의 Thread
+# Java에서 Thread
 
 요즘 OS는 모두 멀티태스킹을 지원한다.
 
