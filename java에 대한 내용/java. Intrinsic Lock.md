@@ -1,4 +1,4 @@
-# Java 고유 락 (Intrinsic Lock)
+# Java 고유 락(Intrinsic Lock)
 Intrinsic Lock / Synchronized Block / Reentrancy   
 Intrinsic Lock (= monitor lock = monitor) : Java의 모든 객체는 lock을 갖고 있음.
 
