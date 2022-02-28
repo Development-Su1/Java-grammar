@@ -2,8 +2,8 @@
 
 자바에는 기본 타입과 Wrapper 클래스가 존재한다.
 
-*기본 타입 : int, long, float, double, boolean 등   
-*Wrapper 클래스 : Integer, Long, Float, Double, Boolean 등
+* 기본 타입 : int, long, float, double, boolean 등   
+* Wrapper 클래스 : Integer, Long, Float, Double, Boolean 등
 
 
 > 박싱 : 기본 타입 데이터에 대응하는 Wrapper 클래스로 만드는 동작
@@ -31,7 +31,7 @@ Integer num = new Integer(10);
 int i = num;
 ```
 
-**성능**
+**성능**   
 편의성을 위해 오토 박싱과 언박싱이 제공되고 있지만, 내부적으로 추가 연산 작업이 거치게 된다.
 
 따라서, 오토 박싱&언박싱이 일어나지 않도록 동일한 타입 연산이 이루어지도록 구현하자.
