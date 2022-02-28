@@ -14,7 +14,7 @@ call by value 호출 방식은 함수 호출 시 전달되는 변수 값을 복�
 ex)   
 ```java
 void func(int n) {
-    n = 20;
+    *n = 20;
 }
 
 void main() {
